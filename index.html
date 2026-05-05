@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidapharma | La Scienza Genera Bellezza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAV -->
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo">VIDAPHARMA</div>
+            <nav>
+                <ul>
+                    <li><a href="#brand">Brand</a></li>
+                    <li><a href="#bestseller">Shop</a></li>
+                    <li><a href="#ricerca">R&D</a></li>
+                    <li><a href="#sostenibilita">Green</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <!-- Icona Carrello Minimalista -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="video-overlay"></div>
+        <!-- Sostituisci il src con il video in slow-motion reale -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://cdn.pixabay.com/video/2020/05/24/40061-424838188_large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content container">
+            <h1>La Scienza<br>Genera Bellezza.</h1>
+            <div class="hero-buttons">
+                <a href="#brand" class="btn btn-primary">Esplora gli Shop</a>
+                <a href="#bestseller" class="btn btn-secondary">Scopri il Siero Iconico</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND ARCHITECTURE -->
+    <section id="brand" class="brand-architecture">
+        <div class="container">
+            <h2 class="section-title">L'Ecosistema Clinico</h2>
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="glass-card">
+                    <h3>Ksurgery</h3>
+                    <p>Estetica professionale avanzata.</p>
+                    <div class="card-hover-content">
+                        <button class="btn btn-primary btn-small">Accedi alla Boutique</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card">
+                    <h3>Ksurgery MED</h3>
+                    <p>Dispositivi medici di altissima precisione.</p>
+                    <div class="card-hover-content">
+                        <button class="btn btn-primary btn-small">Esplora la Linea</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card">
+                    <h3>Supernova Lab</h3>
+                    <p>Ricerca, sviluppo e formulazioni.</p>
+                    <div class="card-hover-content">
+                        <button class="btn btn-secondary btn-small">Richiedi Consulenza</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BESTSELLERS -->
+    <section id="bestseller" class="bestsellers">
+        <div class="container">
+            <h2 class="section-title dark-text">I Capolavori</h2>
+            <div class="grid-3">
+                <div class="product-item">
+                    <div class="product-image placeholder-img"></div>
+                    <h4 class="product-name">Siero Illuminante 3D</h4>
+                    <p class="active-ingredient">Acido Ialuronico Puro</p>
+                    <button class="btn btn-text">Acquista Ora &rarr;</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-image placeholder-img"></div>
+                    <h4 class="product-name">Crema Rigenerante Notte</h4>
+                    <p class="active-ingredient">Peptidi Biomimetici</p>
+                    <button class="btn btn-text">Acquista Ora &rarr;</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-image placeholder-img"></div>
+                    <h4 class="product-name">Protocollo Anti-Age MED</h4>
+                    <p class="active-ingredient">Complesso Vitaminico</p>
+                    <button class="btn btn-text">Acquista Ora &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- R&D SECTION -->
+    <section id="ricerca" class="rnd-section">
+        <div class="container rnd-grid">
+            <div class="stat-item">
+                <span class="counter" data-target="20">0</span><span class="plus">+</span>
+                <p>Anni di Esperienza</p>
+            </div>
+            <div class="stat-item">
+                <span class="counter" data-target="15">0</span>
+                <p>Brevetti Internazionali</p>
+            </div>
+            <div class="stat-item">
+                <span class="counter" data-target="100">0</span><span class="plus">%</span>
+                <p>Formule Clinicamente Testate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">VIDAPHARMA</div>
+            <p>Eccellenza Scientifica Made in Italy.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
