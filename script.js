@@ -1,4 +1,4 @@
-// STICKY HEADER & GLASSMORPHISM
+// STICKY HEADER
 const header = document.getElementById('main-header');
 
 window.addEventListener('scroll', () => {
@@ -16,8 +16,8 @@ let hasAnimated = false;
 function animateCounters() {
     counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
-        const duration = 2000; // Durata animazione in ms
-        const increment = target / (duration / 16); // 60fps
+        const duration = 2000; // Durata dell'animazione in millisecondi
+        const increment = target / (duration / 16); // Circa 60 frame al secondo
 
         let current = 0;
         const updateCounter = () => {
@@ -33,7 +33,7 @@ function animateCounters() {
     });
 }
 
-// Innesca l'animazione quando la sezione R&D è visibile
+// Innesca l'animazione solo quando l'utente scorre fino alla sezione R&D
 const rndSection = document.getElementById('ricerca');
 
 window.addEventListener('scroll', () => {
@@ -41,9 +41,10 @@ window.addEventListener('scroll', () => {
         const sectionPos = rndSection.getBoundingClientRect().top;
         const screenPos = window.innerHeight / 1.3;
 
+        // Se la sezione entra nel campo visivo
         if (sectionPos < screenPos) {
             animateCounters();
-            hasAnimated = true; // Esegue una volta sola
+            hasAnimated = true; // Impedisce all'animazione di ripetersi
         }
     }
 });
