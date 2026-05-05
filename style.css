@@ -49,7 +49,7 @@ nav a:hover { color: var(--color-gold); }
 .mission-subtitle { font-size: 1.1rem; font-weight: 400; margin-bottom: 30px; color: #555; }
 .mission-text { font-weight: 300; line-height: 1.8; color: #333; font-size: 0.95rem; }
 
-/* BRANDS SHOWCASE (ALTERNATING) */
+/* BRANDS SHOWCASE */
 .brands-showcase { display: flex; flex-direction: column; width: 100%; }
 .showcase-row { display: flex; flex-wrap: wrap; width: 100%; min-height: 500px; }
 .showcase-row.reverse { flex-direction: row-reverse; }
@@ -59,6 +59,12 @@ nav a:hover { color: var(--color-gold); }
 .brand-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 25px; letter-spacing: 1px; color: var(--color-night); }
 .brand-subtitle { display: block; font-size: 0.8rem; font-weight: 300; letter-spacing: 3px; color: #666; margin-top: 5px; }
 .showcase-content p { font-weight: 300; line-height: 1.8; color: #555; font-size: 0.95rem; margin-bottom: 20px; }
+
+/* R&D SECTION (CONTATORI) */
+.rnd-section { padding: 80px 0; background-color: var(--color-night); color: var(--color-white); border-top: 1px solid rgba(212, 175, 55, 0.3); }
+.rnd-grid { display: flex; justify-content: space-around; text-align: center; }
+.stat-item .counter, .stat-item .plus { font-family: var(--font-heading); font-size: 4rem; color: var(--color-gold); }
+.stat-item p { font-weight: 300; letter-spacing: 1px; margin-top: 10px; text-transform: uppercase; font-size: 0.8rem; }
 
 /* TESTIMONIALS */
 .testimonials { background-color: var(--color-bg-light); padding: 100px 0; color: var(--color-night); }
@@ -119,4 +125,5 @@ nav a:hover { color: var(--color-gold); }
     .showcase-row, .showcase-row.reverse { flex-direction: column; }
     .showcase-image { min-height: 300px; }
     .showcase-content { padding: 50px 20px; }
+    .rnd-grid { flex-direction: column; gap: 40px; }
 }
