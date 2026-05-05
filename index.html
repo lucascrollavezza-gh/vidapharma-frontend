@@ -20,11 +20,10 @@
                     <li><a href="#brand">Brand</a></li>
                     <li><a href="#bestseller">Shop</a></li>
                     <li><a href="#ricerca">R&D</a></li>
-                    <li><a href="#sostenibilita">Green</a></li>
+                    <li><a href="#testimonianze">Recensioni</a></li>
                 </ul>
             </nav>
             <div class="cart-icon">
-                <!-- Icona Carrello Minimalista -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
             </div>
         </div>
@@ -33,7 +32,6 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="video-overlay"></div>
-        <!-- Sostituisci il src con il video in slow-motion reale -->
         <video autoplay muted loop playsinline class="hero-video">
             <source src="https://cdn.pixabay.com/video/2020/05/24/40061-424838188_large.mp4" type="video/mp4">
         </video>
@@ -41,7 +39,6 @@
             <h1>La Scienza<br>Genera Bellezza.</h1>
             <div class="hero-buttons">
                 <a href="#brand" class="btn btn-primary">Esplora gli Shop</a>
-                <a href="#bestseller" class="btn btn-secondary">Scopri il Siero Iconico</a>
             </div>
         </div>
     </section>
@@ -51,28 +48,25 @@
         <div class="container">
             <h2 class="section-title">L'Ecosistema Clinico</h2>
             <div class="grid-3">
-                <!-- Card 1 -->
-                <div class="glass-card">
+                <div class="glass-card" style="background: linear-gradient(rgba(10,17,40,0.7), rgba(10,17,40,0.8)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80') center/cover;">
                     <h3>Ksurgery</h3>
                     <p>Estetica professionale avanzata.</p>
                     <div class="card-hover-content">
                         <button class="btn btn-primary btn-small">Accedi alla Boutique</button>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="glass-card">
+                <div class="glass-card" style="background: linear-gradient(rgba(10,17,40,0.7), rgba(10,17,40,0.8)), url('https://images.unsplash.com/photo-1615397323863-128a3818e69d?auto=format&fit=crop&w=600&q=80') center/cover;">
                     <h3>Ksurgery MED</h3>
-                    <p>Dispositivi medici di altissima precisione.</p>
+                    <p>Dispositivi medici e protocolli iniettabili.</p>
                     <div class="card-hover-content">
                         <button class="btn btn-primary btn-small">Esplora la Linea</button>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="glass-card">
+                <div class="glass-card" style="background: linear-gradient(rgba(10,17,40,0.7), rgba(10,17,40,0.8)), url('https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=600&q=80') center/cover;">
                     <h3>Supernova Lab</h3>
-                    <p>Ricerca, sviluppo e formulazioni.</p>
+                    <p>Ricerca e formulazioni d'eccellenza.</p>
                     <div class="card-hover-content">
-                        <button class="btn btn-secondary btn-small">Richiedi Consulenza</button>
+                        <button class="btn btn-secondary btn-small">Scopri i Brevetti</button>
                     </div>
                 </div>
             </div>
@@ -85,50 +79,69 @@
             <h2 class="section-title dark-text">I Capolavori</h2>
             <div class="grid-3">
                 <div class="product-item">
-                    <div class="product-image placeholder-img"></div>
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Siero" class="product-image">
                     <h4 class="product-name">Siero Illuminante 3D</h4>
                     <p class="active-ingredient">Acido Ialuronico Puro</p>
                     <button class="btn btn-text">Acquista Ora &rarr;</button>
                 </div>
                 <div class="product-item">
-                    <div class="product-image placeholder-img"></div>
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80" alt="Crema" class="product-image">
                     <h4 class="product-name">Crema Rigenerante Notte</h4>
                     <p class="active-ingredient">Peptidi Biomimetici</p>
                     <button class="btn btn-text">Acquista Ora &rarr;</button>
                 </div>
                 <div class="product-item">
-                    <div class="product-image placeholder-img"></div>
-                    <h4 class="product-name">Protocollo Anti-Age MED</h4>
-                    <p class="active-ingredient">Complesso Vitaminico</p>
+                    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&w=500&q=80" alt="Protocollo" class="product-image">
+                    <h4 class="product-name">Booster Anti-Age MED</h4>
+                    <p class="active-ingredient">Complesso Vitaminico Attivo</p>
                     <button class="btn btn-text">Acquista Ora &rarr;</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- R&D SECTION -->
-    <section id="ricerca" class="rnd-section">
-        <div class="container rnd-grid">
-            <div class="stat-item">
-                <span class="counter" data-target="20">0</span><span class="plus">+</span>
-                <p>Anni di Esperienza</p>
-            </div>
-            <div class="stat-item">
-                <span class="counter" data-target="15">0</span>
-                <p>Brevetti Internazionali</p>
-            </div>
-            <div class="stat-item">
-                <span class="counter" data-target="100">0</span><span class="plus">%</span>
-                <p>Formule Clinicamente Testate</p>
+    <!-- NUOVA SEZIONE: TESTIMONIANZE -->
+    <section id="testimonianze" class="testimonials" style="background-color: #F8F9FA; padding: 100px 0; color: #0A1128;">
+        <div class="container">
+            <h2 class="section-title dark-text">L'Eccellenza Riconosciuta</h2>
+            <div class="grid-3">
+                <div class="review-card" style="background: #fff; padding: 40px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; margin-bottom: 20px;">"I protocolli Ksurgery MED hanno ridefinito gli standard della nostra clinica. La purezza dei principi attivi garantisce risultati visibili fin dalla prima seduta."</p>
+                    <h5 style="font-family: var(--font-heading); font-size: 1.1rem;">Dott.ssa Elena R.</h5>
+                    <span style="font-size: 0.8rem; color: #666;">Medico Estetico, Milano</span>
+                </div>
+                <div class="review-card" style="background: #fff; padding: 40px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; margin-bottom: 20px;">"La collaborazione con Supernova Lab ci ha permesso di lanciare la nostra linea privata con formulazioni brevettate e una stabilità chimica impeccabile."</p>
+                    <h5 style="font-family: var(--font-heading); font-size: 1.1rem;">Istituto Beauty Clinic</h5>
+                    <span style="font-size: 0.8rem; color: #666;">Partner B2B</span>
+                </div>
+                <div class="review-card" style="background: #fff; padding: 40px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Uso il Siero Illuminante 3D nella mia routine quotidiana. È il lusso di una SPA medica concentrato in un flacone dal design elegantissimo."</p>
+                    <h5 style="font-family: var(--font-heading); font-size: 1.1rem;">Martina V.</h5>
+                    <span style="font-size: 0.8rem; color: #666;">Cliente Boutique</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- NUOVA SEZIONE: NEWSLETTER -->
+    <section class="newsletter" style="background-color: var(--color-night); padding: 80px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="container">
+            <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 15px;">Unisciti al mondo Vidapharma</h3>
+            <p style="font-weight: 300; margin-bottom: 30px; opacity: 0.8;">Iscriviti per ricevere aggiornamenti sulle nuove formulazioni e protocolli esclusivi.</p>
+            <form style="display: flex; justify-content: center; gap: 10px; max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="La tua email" style="padding: 15px; width: 100%; border: 1px solid var(--color-silver); background: transparent; color: #fff; border-radius: 2px;">
+                <button type="submit" class="btn btn-primary">Iscriviti</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER DA COMPILARE -->
     <footer>
         <div class="container footer-content">
             <div class="logo">VIDAPHARMA</div>
             <p>Eccellenza Scientifica Made in Italy.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.5;">[Qui inseriremo P.IVA, Indirizzo e Link Privacy]</p>
         </div>
     </footer>
 
